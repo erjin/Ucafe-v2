@@ -38,38 +38,63 @@ body {
 
 
 a:hover{
-	color: red;
 	text-decoration: none;
-
+	color: black;
 }
 
 a:link{
-	color: red;
 	text-decoration: none;
+	color: black;
 }
 
 a:visited{
-	color: red;
 	text-decoration: none;
+	color: black;
 }
 
 a:active{
-	color: red;
 	text-decoration: none;
+	color: black;
 }
 
 
 .main-header{
 	height:160px;
 	width: 100%;
-	padding-left: 10%
+	padding-left: 10%;
+	padding-right: 10%;
+	display: block;
 }
 
 .logo-section{
 	height: 160px;
 	width: 160px;
 	background-image: url("../images/logo.jpg");
+	display: inline;
+	float: left;
 }
+
+
+.icon{
+	text-align: center;
+	float: right;
+
+}
+
+.iconImage{
+	width:35px;
+	height:35px;
+	margin-left: 10px;
+}
+
+.email{
+	font-size: 1.8em;
+	color: black;
+	text-align: center;
+	padding-top: 35px;
+	margin-bottom: 1.3em;
+}
+
 
 .menu-box{
 	height: 250px;
@@ -82,8 +107,8 @@ a:active{
 	margin-top: -30%;
 
 
-	/*opacity: 0.9;
-    filter: alpha(opacity=60);*/
+	opacity: 0.9;
+    filter: alpha(opacity=60);
 }
 
 .title{
@@ -106,7 +131,7 @@ a:active{
 	margin-top: 1%;
 	height: 40px; 
 	width: 110px; 
-	border-color: red; 
+	border-color: rgb(114,193,139); 
 	border-style: solid; 
 	border-width:2px; 
 	border-radius:5px; 
@@ -114,6 +139,11 @@ a:active{
 	float: right;
 	margin-right: 1%;
 	margin-bottom:1%;
+	background-color: rgb(114,193,139);
+}
+
+.menutext{
+	color: white;
 }
 
 .index-wrapper{
@@ -183,7 +213,9 @@ a:active{
 	margin-right: auto;
 	position: relative;
 	z-index: 13;
-	margin-top: -30%;
+	margin-top: -35%;
+/*	background-color: transparent;
+*/
 	background-color: white;
 }
 
@@ -218,9 +250,6 @@ a:active{
 
 }
 
-.carousel-indicators{
-}
-
 .i-title{
 	padding-top: 7%;
 	text-align: center;
@@ -248,7 +277,7 @@ a:active{
 }
 
 
-.team-box-wrapper{
+/*.team-box-wrapper{
 	margin-top: 70px;
 	margin-bottom: 50px; 
 	text-align: center;
@@ -271,81 +300,107 @@ a:active{
 .team-text{
 	display: inline;
 	height: 100px;
-}
-
+}*/
 
 .homeDImage{
 	width: 80%;
 }
 
-.footer{
-	position: fixed;
-	bottom: 30px;
-	right:15px;
-	z-index: 100;
-	height: 40px; 
-	width: 80px; 
-	border-color: red; 
-	border-style: solid; 
-	border-width:2px; 
-	border-radius:5px; 
-	text-align:center ;
-	float: right;
+
+/*about page*/
+/*.intro-text{
+	margin-top: 0px;
+	margin-bottom: 50px; 
+	text-align: center;
+	background-color: gray;
+	height:300px;
+	width: 71.2%;
+	margin-left: auto;
+	margin-right: auto;
+}*/
+.about-wrapper{
+	margin-top: 70px;
+	margin-bottom: 50px; 
+	text-align: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-footer{
+.about-box{
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	vertical-align:top;
+}
+
+.about-image{
+	width: 200px;
+	height: 200px;
+} 
+
+.about-text{
+	display: inline;
+	width: 200px;
+	font-size: 11px;
+}
+/*about page*/
+
+
+.footer{
+	position: fixed;
+	bottom: 0px;	
+    right:0px;
+	z-index: 100;
+	height: 50px; 
+	width: 120px; 
+	text-align:center ;
+	float: right;
+	color: black;
+	opacity: 0.9;
+    filter: alpha(opacity=60);
+}
+
+.bottom-m{
+	background-color: rgb(245,245,245); /*gray*/
+	height: 50px; 
+	width: 120px; 
+	padding-top: 15px;
+	font-size: 15px;
+
+}
+
+a:hover div{
+	background-color: rgb(114,193,139); /*green*/
+	color: white;
+}
+
+/*footer{
 	background-color: rgb(245,245,245);
 	width: 100%;
 	height: 180px;
 	display: block;
-}
-
-
-
-.icon{
-	text-align: center;
-	margin: 0 auto;
-
-}
-
-.iconImage{
-	width:3em;
-	height:3em;
-	margin-left: 10px;
-}
-
-.email{
-	font-size: 2em;
-	color: black;
-	text-align: center;
-	padding-top: 50px;
-	margin-bottom: 1.3em;
-}
+}*/
 
 
 @media screen and (max-width:420px) and (orientation: portrait){
 	.menu-box{
 	
-	width: 270px;
+		width: 270px;
+	}
+	.indicator-wrapper{
+		width: 270px;
+	}
+	.Click{
+		padding-top: 10%;
 	}
 
-	.indicator-wrapper{
-	width: 270px;
-}
-	.Click{
-	padding-top: 10%;
-}
+	.Text{
+		padding-top: 13%;
+	}
 
-.Text{
-	padding-top: 13%;
-
-}
-
-.Eat{
-	padding-top: 16%;
-}
-
-}
-
+	.Eat{
+		padding-top: 16%;
+	}
 }
 
